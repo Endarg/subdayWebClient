@@ -1,0 +1,262 @@
+/*Main page*/
+.root
+{
+    height: 100%;
+    margin: 0;
+}
+
+.mainpage-root
+{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(16, 23, 31);
+}
+
+.mainpage-header
+{
+    background-color: rgb(211,124,0);
+    height: 50px;
+    width: 100%;
+}
+
+.mainpage-form-header
+{
+    height: 50px;
+
+    padding-top: 2px;
+
+    text-align: center;
+    color: aliceblue;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+
+    background-color: rgb(211,124,0);
+}
+
+.mainpage-form
+{
+    height: 100%;
+    background-color: rgb(21,32,43);
+}
+
+
+.mainpage-label
+{
+    display: inline-block;
+    width: 160px;
+
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+    text-align: left;
+    color: aliceblue;
+}
+
+.mainpage-label-right
+{
+    display: inline-block;
+    width: 160px;
+
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+    text-align: right;
+    color: aliceblue;
+}
+
+.mainpage-label-block
+{
+    display: block;
+
+    margin-left: 5px;
+
+    text-align: left;
+    color: aliceblue;
+}
+
+
+.mainpage-status-on
+{
+    display: inline-block;
+    width: 50%;
+
+    font-weight: bold;
+    text-align: left;
+    color: rgb(82, 212, 82);
+}
+
+.mainpage-status-off
+{
+    display: inline-block;
+    width: 50%;
+
+    font-weight: bold;
+    text-align: left;
+    color: rgb(247, 36, 36);
+}
+
+.mainpage-button
+{
+    width: 20%;
+    height: 50px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: aliceblue;
+
+    margin-top: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 10px;
+
+    border: 0px;
+    border-radius: 15px;
+
+    background-color: rgb(211,124,0);
+}
+
+.mainpage-button:hover
+{
+    background-color: rgb(230, 139, 13);
+}
+
+.mainpage-button:active
+{
+    background-color: rgb(202, 123, 13);
+}
+
+.mainpage-button:disabled
+{
+    background-color: rgb(63,76,89);
+    color: rgb(153, 158, 161);
+}
+
+.winpage-label01
+{
+    display: block;
+
+    margin-top: 5px;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    text-align: center;
+    font-size: 32px;
+    color: aliceblue;
+}
+
+.winpage-winner
+{
+    display: block;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 48px;
+
+    color: aliceblue;
+}
+
+.winpage-label02
+{
+    display: block;
+
+    margin-top: 5px;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    text-align: center;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+.wingape-buttons-panel
+{
+    display: block;
+}
+
+.winpage-button-left
+{
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: aliceblue;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 5%;
+
+    border: 0px;
+    border-radius: 15px;
+
+    background-color: rgb(211,124,0);
+}
+
+.winpage-button-left:hover
+{
+    background-color: rgb(230, 139, 13);
+}
+
+.winpage-button-left:active
+{
+    background-color: rgb(202, 123, 13);
+}
+
+.winpage-button-left:disabled
+{
+    background-color: rgb(63,76,89);
+    color: rgb(153, 158, 161);
+}
+
+.winpage-button-right
+{
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: aliceblue;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 20%;
+
+    border: 0px;
+    border-radius: 15px;
+
+    background-color: rgb(211,124,0);
+}
+
+.winpage-button-right:hover
+{
+    background-color: rgb(230, 139, 13);
+}
+
+.winpage-button-right:active
+{
+    background-color: rgb(202, 123, 13);
+}
+
+.winpage-button-right:disabled
+{
+    background-color: rgb(63,76,89);
+    color: rgb(153, 158, 161);
+}
