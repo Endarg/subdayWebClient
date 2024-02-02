@@ -286,7 +286,7 @@ function quickSort(arr) {
 
 async function getInit()
 {
-    await axios.get('https://82.97.245.242:5000/get-init').then (res =>{
+    await axios.get('https://subday.fun:5000/get-init').then (res =>{
         gamesRaw = res.data.games;
         isOn = res.data.isOn;
         processGames();
@@ -302,7 +302,7 @@ async function getUpdate()
     try {
         console.log('Getting update');
         
-        await axios.get('https://82.97.245.242:5000/get-update').then (res => {
+        await axios.get('https://subday.fun/get-update').then (res => {
             gamesRaw = res.data.games;
             isOn = res.data.isOn;
             processGames();
