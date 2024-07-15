@@ -54,7 +54,7 @@ function buildMainpage()
 
     mainpageChattersCountLabel = document.createElement("div");
     mainpageChattersCountLabel.className = "mainpage-label"
-    mainpageChattersCountLabel.textContent = "Количество участников: "+chattersCount;
+    mainpageChattersCountLabel.textContent = "Количество участников: "+ chattersCount;
     
     mainpageStatus = document.createElement("div");
     updateStatus();
@@ -72,7 +72,7 @@ function buildMainpage()
     mainpageHeader.appendChild(mainpageFormHeader);
     mainpageRoot.appendChild(mainpageStatusLabel);
     mainpageRoot.appendChild(mainpageStatus);
-    mainpageRoot.appendChild(mainpageChattersCountLabel);
+    //mainpageRoot.appendChild(mainpageChattersCountLabel);
     mainpageRoot.appendChild(mainpageButton);
     mainpageRoot.appendChild(mainpageHr01);
     mainpageRoot.appendChild(mainpageGamesPanel);
