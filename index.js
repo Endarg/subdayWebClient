@@ -346,6 +346,7 @@ async function getUpdate()
         else
         {
             console.log('Unexpected error occured, repeating request');
+            await new Promise(resolve => setTimeout(resolve, 1000));
             await getUpdate();
         }
     }
