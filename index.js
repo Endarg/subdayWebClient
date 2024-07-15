@@ -327,7 +327,7 @@ async function getUpdate()
     {
         console.log('Timeout faced, repeating request')
         //await setTimeout ( () => {
-            await getUpdate()
+            await getUpdate();
         //}, 500)
     }
     else if (responce.status == 200)
@@ -338,10 +338,13 @@ async function getUpdate()
         processGames();
         updateGamesPanel();
         updateStatus();
+
+        await getUpdate();
     }
     else
     {
-        console.log('Unexpected error occured, repeating request')
+        console.log('Unexpected error occured, repeating request');
+        await getUpdate();
     }
     
 
