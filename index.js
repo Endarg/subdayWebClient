@@ -7,10 +7,12 @@ document.body.onload = init;
 
 let gamesRaw;
 let gamesProcessed;
+let chattersCount;
 
 let mainpageRoot;
 let mainpageFormHeader;
 let mainpageStatus;
+let mainpageChattersCountLabel;
 
 let mainpageButton;
 let mainpageGamesPanel;
@@ -49,13 +51,17 @@ function buildMainpage()
     const mainpageStatusLabel = document.createElement("div");
     mainpageStatusLabel.className = "mainpage-label"
     mainpageStatusLabel.textContent = "Статус приема заявок:";
+
+    mainpageChattersCountLabel = document.createElement("div");
+    mainpageStatusLabel.className = "mainpage-label"
+    mainpageStatusLabel.textContent = "Количество участников: "+chattersCount;
     
     mainpageStatus = document.createElement("div");
     updateStatus();
 
     mainpageButton = document.createElement("button");
     mainpageButton.className = "mainpage-button";
-    mainpageButton.textContent = "Выбрать игру";
+    mainpageButton.textContent = "Выбрать победителя";
     mainpageButton.onclick = mainpageButtonOnClick;
 
     const mainpageHr01 = document.createElement("hr");
@@ -170,6 +176,9 @@ function updateGamesPanel()
         game.appendChild(gameName);
         mainpageGamesPanel.appendChild(game);
     }
+
+    chattersCount = gamesProcessed.length;
+    mainpageStatusLabel.textContent = "Количество участников: "+chattersCount;
 }
 
 function removeAllChildNodes(parent) {
@@ -182,9 +191,9 @@ function chooseWinner()
 {
     let winnerID = Math.floor(Math.random() * (gamesRaw.length));
     let winner = gamesRaw[winnerID];
-    winpageWinner.textContent = winner.name;
+    winpageWinner.textContent = winner.chatter;
 
-    let chatters = winner.chatter;
+    /*let chatters = winner.chatter;
     let id = 0;
     for (let i = 0; i < gamesRaw.length; ++i)
     {
@@ -205,7 +214,7 @@ function chooseWinner()
         winpageChattersAnouncement.textContent = "варик предложил";
     }
 
-    winpageChatters.textContent = chatters;
+    winpageChatters.textContent = chatters;*/
 }
 
 function mainpageButtonOnClick()
