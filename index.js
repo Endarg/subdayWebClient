@@ -268,6 +268,7 @@ async function getInit()
         isOn = res.data.isOn;
         processGames();
         updateGamesPanel();
+        console.log('Status: '+isOn);
         updateStatus();
         if (res.status == 200)
             console.log('Got itin config');
