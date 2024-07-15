@@ -296,7 +296,7 @@ async function getInit()
     
 }
 
-async function getUpdate()
+/*async function getUpdate()
 {
 
     try {
@@ -316,4 +316,37 @@ async function getUpdate()
             getUpdate()
         }, 500)
     }
+}*/
+
+async function getUpdate()
+{
+    console.log('Getting update');
+    let responce = await axios.get('https://subday.fun/get-update');
+
+    if (responce.status == 502)
+    {
+        console.log('Timeout faced, repeating request')
+        //await setTimeout ( () => {
+            await getUpdate()
+        //}, 500)
+    }
+    else if (responce.status == 200)
+    {
+        console.log('Got an update')
+        gamesRaw = res.data.games;
+        isOn = res.data.isOn;
+        processGames();
+        updateGamesPanel();
+        updateStatus();
+    }
+    else
+    {
+        console.log('Unexpected error occured, repeating request')
+    }
+    
+
+    
+    
+        
+    
 }
