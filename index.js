@@ -320,28 +320,36 @@ async function getInit()
 
 async function getUpdate()
 {
-    console.log('Getting update');
-    let responce = await axios.get('https://subday.fun/get-update');
-
-    if (responce.status == 502)
+    try
     {
-        console.log('Timeout faced, repeating request')
-        //await setTimeout ( () => {
+        console.log('Getting update');
+        let responce = await axios.get('https://subday.fun/get-update');
+
+        if (responce.status == 502)
+        {
+            console.log('Timeout faced, repeating request')
+            //await setTimeout ( () => {
+                await getUpdate();
+            //}, 500)
+        }
+        else if (responce.status == 200)
+        {
+            console.log('Got an update')
+            gamesRaw = res.data.games;
+            isOn = res.data.isOn;
+            processGames();
+            updateGamesPanel();
+            updateStatus();
+
             await getUpdate();
-        //}, 500)
+        }
+        else
+        {
+            console.log('Unexpected error occured, repeating request');
+            await getUpdate();
+        }
     }
-    else if (responce.status == 200)
-    {
-        console.log('Got an update')
-        gamesRaw = res.data.games;
-        isOn = res.data.isOn;
-        processGames();
-        updateGamesPanel();
-        updateStatus();
-
-        await getUpdate();
-    }
-    else
+    catch(e)
     {
         console.log('Unexpected error occured, repeating request');
         await getUpdate();
@@ -349,6 +357,10 @@ async function getUpdate()
     
 
     
+    
+
+    
+
     
         
     
