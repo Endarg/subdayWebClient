@@ -179,7 +179,7 @@ function updateGamesPanel()
     }
 
     chattersCount = gamesProcessed.length;
-    mainpageStatusLabel.textContent = "Количество участников: "+chattersCount;
+    //mainpageStatusLabel.textContent = "Количество участников: "+chattersCount;
 }
 
 function removeAllChildNodes(parent) {
