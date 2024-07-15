@@ -287,6 +287,7 @@ async function getUpdate()
             isOn = res.data.isOn;
             processGames();
             updateGamesPanel();
+            console.log('Status: '+isOn);
             updateStatus();
         });
         
