@@ -321,13 +321,3 @@ async function getUpdate()
         }, 500)
     }
 }
-
-    
-    
-
-    
-
-    
-        
-    
-}
