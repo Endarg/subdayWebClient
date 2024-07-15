@@ -166,12 +166,8 @@ function updateGamesPanel()
         let game = document.createElement("div");
         let gameName = document.createElement("div");
         gameName.className = "mainpage-label";
-        gameName.textContent = gamesProcessed[i].name;
-        let gameChance = document.createElement("div");
-        gameChance.className = "mainpage-label-right";
-        gameChance.textContent = gamesProcessed[i].chance+'%';
+        gameName.textContent = gamesProcessed[i].chatter;
         game.appendChild(gameName);
-        game.appendChild(gameChance);
         mainpageGamesPanel.appendChild(game);
     }
 }
@@ -232,36 +228,7 @@ function winpageAgainButtonOnClick()
 
 function processGames(games)
 {
-    gamesProcessed = [];
-    
-    for (let i = 0; i < gamesRaw.length; ++i)
-    {
-        let alreadyProcessed = false;
-        for (let j = 0; j < gamesProcessed.length; ++j)
-        {
-            if (gamesRaw[i].name == gamesProcessed[j].name)
-            {
-                alreadyProcessed = true;
-                gamesProcessed[j].votes++;
-                break;
-            }
-        }
-
-        if (!alreadyProcessed)
-        {
-            gamesProcessed.push({
-                name: gamesRaw[i].name,
-                votes: 1,
-                chance: 0
-            });
-        }
-    }
-
-    for (let i = 0; i < gamesProcessed.length; ++i)
-    {
-        gamesProcessed[i].chance = (gamesProcessed[i].votes * 100 / (gamesRaw.length)).toString().slice(0,4);
-    }
-
+    gamesProcessed = gamesRaw;
     gamesProcessed = quickSort(gamesProcessed);
 }
 
