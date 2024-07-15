@@ -292,6 +292,8 @@ async function getInit()
         processGames();
         updateGamesPanel();
         updateStatus();
+        if (res.status == 200)
+            console.log('Got itin config');
     });
     
 }
