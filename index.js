@@ -53,8 +53,8 @@ function buildMainpage()
     mainpageStatusLabel.textContent = "Статус приема заявок:";
 
     mainpageChattersCountLabel = document.createElement("div");
-    mainpageStatusLabel.className = "mainpage-label"
-    mainpageStatusLabel.textContent = "Количество участников: "+chattersCount;
+    mainpageChattersCountLabel.className = "mainpage-label"
+    mainpageChattersCountLabel.textContent = "Количество участников: "+chattersCount;
     
     mainpageStatus = document.createElement("div");
     updateStatus();
@@ -72,6 +72,7 @@ function buildMainpage()
     mainpageHeader.appendChild(mainpageFormHeader);
     mainpageRoot.appendChild(mainpageStatusLabel);
     mainpageRoot.appendChild(mainpageStatus);
+    mainpageRoot.appendChild(mainpageChattersCountLabel);
     mainpageRoot.appendChild(mainpageButton);
     mainpageRoot.appendChild(mainpageHr01);
     mainpageRoot.appendChild(mainpageGamesPanel);
@@ -112,9 +113,9 @@ function buildWinnwerpage()
     winpageChattersAnouncement.className = "winpage-label01";
     winpageChattersAnouncement.textContent = "варик предложили";
 
-    winpageChatters = document.createElement("div");
+    /*winpageChatters = document.createElement("div");
     winpageChatters.className = "winpage-label02";
-    winpageChatters.textContent = "honeymad, endargemp, zhmil";
+    winpageChatters.textContent = "honeymad, endargemp, zhmil";*/
 
     const winpageButtonsPanel = document.createElement("div");
     winpageButtonsPanel.className = "wingape-buttons-panel";
@@ -133,8 +134,8 @@ function buildWinnwerpage()
     winpageHeader.appendChild(winpageFormHeader);
     winpageRoot.appendChild(winnerpageLabel01);
     winpageRoot.appendChild(winpageWinner);
-    winpageRoot.appendChild(winpageChattersAnouncement);
-    winpageRoot.appendChild(winpageChatters);
+    //winpageRoot.appendChild(winpageChattersAnouncement);
+    //winpageRoot.appendChild(winpageChatters);
     winpageRoot.appendChild(winpageButtonsPanel);
     winpageButtonsPanel.appendChild(winpageBackButton);
     winpageButtonsPanel.appendChild(winpageAgainButton);
