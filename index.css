@@ -136,6 +136,11 @@
     color: rgb(153, 158, 161);
 }
 
+.mainpage-games-panel
+{
+    background-color: rgb(16, 23, 31);
+}
+
 .winpage-label01
 {
     display: block;
