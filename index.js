@@ -67,6 +67,7 @@ function buildMainpage()
     const mainpageHr01 = document.createElement("hr");
 
     mainpageGamesPanel = document.createElement("div");
+    mainpageGamesPanel.className = "mainpage-games-panel";
 
     mainpageRoot.appendChild(mainpageHeader);
     mainpageHeader.appendChild(mainpageFormHeader);
