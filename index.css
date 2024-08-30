@@ -138,6 +138,7 @@
 
 .mainpage-games-panel
 {
+    display: inline;
     background-color: rgb(16, 23, 31);
 }
 
