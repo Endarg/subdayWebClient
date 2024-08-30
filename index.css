@@ -138,7 +138,10 @@
 
 .mainpage-games-panel
 {
-    display: inline;
+    display: grid;
+    grid-auto-columns: 250px; /* size of each column */
+    grid-auto-flow: column; /* column flow */
+    grid-template-rows: 50px;
     background-color: rgb(16, 23, 31);
 }
 
