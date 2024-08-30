@@ -56,7 +56,7 @@ function buildMainpage()
     mainpageStatusLabel.textContent = "Статус приема заявок:";
 
     mainpageChattersCountLabel = document.createElement("div");
-    mainpageChattersCountLabel.className = "mainpage-label"
+    mainpageChattersCountLabel.className = ".mainpage-label-chatterscount"
     mainpageChattersCountLabel.textContent = "Количество участников: ";
     
     mainpageStatus = document.createElement("div");

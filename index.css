@@ -45,6 +45,19 @@
 .mainpage-label
 {
     display: inline-block;
+    width: 160px;
+
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+    text-align: left;
+    color: aliceblue;
+}
+
+.mainpage-label-chatterscount
+{
+    display: inline-block;
     width: 1000px;
 
     margin-left: 5px;
