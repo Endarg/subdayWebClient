@@ -82,7 +82,7 @@ function buildMainpage()
 
     mainpageRoot.appendChild(mainpageHeader);
     mainpageHeader.appendChild(mainpageFormHeader);
-    mainpageRoot.appendChild(mainpageStatusLabel);
+    //mainpageRoot.appendChild(mainpageStatusLabel);
     //mainpageRoot.appendChild(mainpageStatus);
     mainpageRoot.appendChild(mainpageChattersCountLabel);
     mainpageRoot.appendChild(mainpageButton);
