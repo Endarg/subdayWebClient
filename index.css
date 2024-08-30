@@ -139,9 +139,7 @@
 .mainpage-games-panel
 {
     display: grid;
-    grid-auto-columns: 200px; /* size of each column */
     grid-auto-flow: column; /* column flow */
-    
     background-color: rgb(16, 23, 31);
 }
 
