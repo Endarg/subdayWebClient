@@ -57,7 +57,7 @@ function buildMainpage()
 
     mainpageChattersCountLabel = document.createElement("div");
     mainpageChattersCountLabel.className = "mainpage-label"
-    mainpageChattersCountLabel.textContent = "Количество участников: "+ chattersCount;
+    mainpageChattersCountLabel.textContent = "Количество участников: ";
     
     mainpageStatus = document.createElement("div");
     updateStatus();
@@ -83,8 +83,8 @@ function buildMainpage()
     mainpageRoot.appendChild(mainpageHeader);
     mainpageHeader.appendChild(mainpageFormHeader);
     mainpageRoot.appendChild(mainpageStatusLabel);
-    mainpageRoot.appendChild(mainpageStatus);
-    //mainpageRoot.appendChild(mainpageChattersCountLabel);
+    //mainpageRoot.appendChild(mainpageStatus);
+    mainpageRoot.appendChild(mainpageChattersCountLabel);
     mainpageRoot.appendChild(mainpageButton);
     mainpageRoot.appendChild(mainpageHr01);
     mainpageRoot.appendChild(mainpageGamesPanel);
@@ -179,6 +179,8 @@ function updateStatus()
 
 function updateGamesPanel()
 {
+    mainpageChattersCountLabel.textContent = "Количество участников: "+ gamesProcessed.length;
+
     for (let i = 0; i < COLUMNS_COUNT; ++i)
     {
         removeAllChildNodes(mainpageGamesPanelColumns[i]);
