@@ -141,6 +141,12 @@
     background-color: rgb(16, 23, 31);
 }
 
+.mainpage-games-panel-column
+{
+    display: inline;
+    background-color: rgb(16, 23, 31);
+}
+
 .winpage-label01
 {
     display: block;

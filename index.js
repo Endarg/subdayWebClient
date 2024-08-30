@@ -1,5 +1,7 @@
 import axios from 'https://cdn.jsdelivr.net/npm/axios@1.6.5/+esm'
 
+const COLUMNS_COUNT = 10;
+
 let isOn = false;
 let channel = "honeymad";
 
@@ -16,6 +18,7 @@ let mainpageChattersCountLabel;
 
 let mainpageButton;
 let mainpageGamesPanel;
+let mainpageGamesPanelColumns = [];
 
 let winpageRoot;
 let winpageFormHeader;
@@ -68,6 +71,14 @@ function buildMainpage()
 
     mainpageGamesPanel = document.createElement("div");
     mainpageGamesPanel.className = "mainpage-games-panel";
+
+    for (let i = 0; i < COLUMNS_COUNT; ++i)
+    {
+        let mainpageGamesColumn = document.createElement("div");
+        mainpageGamesColumn.className = "mainpage-games-panel-column";
+        mainpageGamesPanelColumns.push(mainpageGamesColumn);
+        mainpageGamesPanel.appendChild(mainpageGamesColumn);
+    }
 
     mainpageRoot.appendChild(mainpageHeader);
     mainpageHeader.appendChild(mainpageFormHeader);
@@ -168,7 +179,11 @@ function updateStatus()
 
 function updateGamesPanel()
 {
-    removeAllChildNodes(mainpageGamesPanel);
+    for (let i = 0; i < COLUMNS_COUNT; ++i)
+    {
+        removeAllChildNodes(mainpageGamesPanelColumns[i]);
+    }
+    let currentColumn = 0;
     for (let i = 0; i < gamesProcessed.length; ++i)
     {
         let game = document.createElement("div");
@@ -176,7 +191,12 @@ function updateGamesPanel()
         gameName.className = "mainpage-label";
         gameName.textContent = gamesProcessed[i].chatter;
         game.appendChild(gameName);
-        mainpageGamesPanel.appendChild(game);
+        mainpageGamesPanelColumns[currentColumn].appendChild(game);
+        
+        currentColumn++;
+        if (currentColumn == COLUMNS_COUNT)
+            currentColumn = 0;
+
     }
 
     chattersCount = gamesProcessed.length;
