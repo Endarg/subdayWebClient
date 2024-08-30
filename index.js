@@ -1,6 +1,6 @@
 import axios from 'https://cdn.jsdelivr.net/npm/axios@1.6.5/+esm'
 
-const COLUMNS_COUNT = 10;
+const COLUMNS_COUNT = 7;
 
 let isOn = false;
 let channel = "honeymad";
