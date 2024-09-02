@@ -256,7 +256,8 @@ function wingapeBackButtonOnClick()
 
 function winpageAgainButtonOnClick()
 {
-    winpageWinner.scale = 0;
+    winpageRoot.removeChild(winpageWinner);
+    winpageRoot.appendChild(winpageWinner);
     chooseWinner();
 }
 
