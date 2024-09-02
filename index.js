@@ -256,8 +256,9 @@ function wingapeBackButtonOnClick()
 
 function winpageAgainButtonOnClick()
 {
+    let winpageWinnerIndex = Array.prototype.indexOf.call(winpageRoot, winpageWinner);
     winpageRoot.removeChild(winpageWinner);
-    winpageRoot.appendChild(winpageWinner);
+    winpageRoot.insertBefore(winpageWinner,winpageRoot.childNodes[2]);
     chooseWinner();
 }
 
