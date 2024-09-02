@@ -256,8 +256,7 @@ function wingapeBackButtonOnClick()
 
 function winpageAgainButtonOnClick()
 {
-    winpageWinner.animation = "none";
-    winpageWinner.animation = "";
+    winpageWinner.scale = 0;
     chooseWinner();
 }
 
