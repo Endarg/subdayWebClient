@@ -358,7 +358,8 @@ async function getWinnerMessages()
         
         await axios.get('https://subday.fun/get-winner-msg').then (res => {
             console.log('Got winners messages');
-            winnersMessages = res.data.winnersMsgs;
+            winnersMessages = res.data.winnerMsgs;
+            console.log(winnersMessages);
             updateWinnersMessages();
         });
         
