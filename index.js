@@ -309,7 +309,7 @@ function updateWinnersMessages()
     for (let i = 0; i < winnersMessages.length; ++i)
     {
         let winnersMessage = document.createElement("div");
-        winnersMessage.className = "mainpage-label";
+        winnersMessage.className = "winpage-chat-label";
         winnersMessage.textContent = winner.chatter+": "+winnersMessages[i];
         winpageWinnersMessagesPanel.appendChild(winnersMessage);
     }
@@ -318,6 +318,7 @@ function updateWinnersMessages()
 function resetTimer()
 {
     countDownDate = new Date().getTime();
+    timerTick();
 }
 
 
