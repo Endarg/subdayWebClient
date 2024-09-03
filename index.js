@@ -147,6 +147,8 @@ function buildWinnwerpage()
     winpageAgainButton.onclick = winpageAgainButtonOnClick;
 
     winpageWinnersMessagesPanel = document.createElement("div");
+    winpageWinnersMessagesPanel.className = "tryddd";
+    winpageWinnersMessagesPanel.textContent = "Еще раз";
 
     winpageRoot.appendChild(winpageHeader);
     winpageHeader.appendChild(winpageFormHeader);
