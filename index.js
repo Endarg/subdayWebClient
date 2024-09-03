@@ -225,7 +225,7 @@ function chooseWinner()
     winpageWinner.textContent = winner.chatter;
 
     const postData = {
-        winner: winner
+        winner: winner.chatter
     }
     const responce = axios.post('https://subday.fun/set-winner', postData);
 
