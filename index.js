@@ -317,7 +317,7 @@ function updateWinnersMessages()
 
 function resetTimer()
 {
-    countDownDate = new Date().getTime();
+    countDownDate = new Date().getTime() + 60000;
     timerTick();
 }
 
@@ -333,12 +333,18 @@ async function timerTick()
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+  var minumesText = minutes;
+  if (minutes == 0)
+  {
+    minumesText = "00";
+  }
+
   if (distance < 0) {
     winpageTimer.textContent = "00:00";
   }
   else
   {
-    winpageTimer.textContent = minutes + ":" + seconds;
+    winpageTimer.textContent = minumesText + ":" + seconds;
   }
 
   setTimeout ( () => {
