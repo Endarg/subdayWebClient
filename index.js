@@ -328,41 +328,40 @@ function resetTimer()
 async function timerTick() 
 {
 
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
 
-  // Time calculations for minutes and seconds
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Time calculations for minutes and seconds
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  var secText = "";
-  console.log(seconds);
+    var secText = "";
+    console.log(seconds);
 
-  if (seconds < 10)
-  {
-    console.log("Seconds < 10")
-    secText = "0";
-  }
-  
-  var minText = "";
-  if (minutes < 10)
-  {
-    minText = "0";
-  }
+    if (seconds < 10)
+    {
+        secText = "0";
+    }
 
- 
-  if (distance < 0) {
+    var minText = "";
+    if (minutes < 10)
+    {
+        minText = "0";
+    }
+
+
+    if (distance < 0) {
     winpageTimer.textContent = "00:00";
-  }
-  else
-  {
+    }
+    else
+    {
     winpageTimer.textContent = minText + minutes + ":" + secText + seconds;
-  }
+    }
 
-  setTimeout ( () => {
+    setTimeout ( () => {
     timerTick() 
-  }, 1000)
-  
+    }, 1000)
+
 };
 
 function quickSort(arr) {
