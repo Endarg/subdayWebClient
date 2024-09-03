@@ -319,7 +319,7 @@ function updateWinnersMessages()
 
 function resetTimer()
 {
-    countDownDate = new Date().getTime() + 15000;
+    countDownDate = new Date().getTime() + 60000;
     timerTick();
 }
 
