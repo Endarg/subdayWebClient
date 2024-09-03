@@ -5,7 +5,8 @@ const COLUMNS_COUNT = 7;
 let isOn = false;
 let channel = "honeymad";
 let winnersMessages = [];
-
+let winner;
+let countDownDate;
 
 document.body.onload = init;
 
@@ -31,7 +32,7 @@ let winpageBackButton;
 let winpageAgainButton;
 let winpageWinnersMessagesPanel;
 let winpageTimer;
-let countDownDate;
+
 
 function init()
 {    
@@ -241,7 +242,7 @@ function removeAllChildNodes(parent) {
 function chooseWinner()
 {
     let winnerID = Math.floor(Math.random() * (gamesRaw.length));
-    let winner = gamesRaw[winnerID];
+    winner = gamesRaw[winnerID];
     winpageWinner.textContent = winner.chatter;
 
     const postData = {
@@ -309,7 +310,7 @@ function updateWinnersMessages()
     {
         let winnersMessage = document.createElement("div");
         winnersMessage.className = "mainpage-label";
-        winnersMessage.textContent = winner+": "+winnersMessages[i];
+        winnersMessage.textContent = winner.chatter+": "+winnersMessages[i];
         winpageWinnersMessagesPanel.appendChild(winnersMessage);
     }
 }
