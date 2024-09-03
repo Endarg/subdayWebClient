@@ -43,6 +43,7 @@ function init()
     getInit();
     getUpdate();
     getWinnerMessages();
+    resetTimer();
 }
 
 function buildMainpage()
@@ -175,6 +176,7 @@ function buildWinnwerpage()
     winpageRoot.appendChild(winnerpageHr01);
     winpageRoot.appendChild(winpageTimer);
     winpageRoot.appendChild(winnerpageHr02);
+    winpageRoot.appendChild(winpageChatLabel);
     winpageRoot.appendChild(winpageWinnersMessagesPanel);
 }
 
