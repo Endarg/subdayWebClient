@@ -227,7 +227,7 @@ function chooseWinner()
     const postData = {
         winner: winner
     }
-    const responce = axios.post('https://subday.fun/login', postData);
+    const responce = axios.post('https://subday.fun/set-winner', postData);
 
     /*let chatters = winner.chatter;
     let id = 0;
