@@ -6,6 +6,7 @@ let isOn = false;
 let channel = "honeymad";
 let winnersMessages = [];
 
+
 document.body.onload = init;
 
 let gamesRaw;
@@ -29,6 +30,8 @@ let winpageChatters;
 let winpageBackButton;
 let winpageAgainButton;
 let winpageWinnersMessagesPanel;
+let winpageTimer;
+let countDownDate;
 
 function init()
 {    
@@ -146,9 +149,19 @@ function buildWinnwerpage()
     winpageAgainButton.textContent = "Еще раз";
     winpageAgainButton.onclick = winpageAgainButtonOnClick;
 
+    const winnerpageHr01 = document.createElement("hr");
+
+    winpageTimer = document.createElement("div");
+    winpageTimer.className = "winpage-winner";
+
+    const winnerpageHr02 = document.createElement("hr");
+
+    const winpageChatLabel = document.createElement("div");
+    winpageChatLabel.className = "winpage-label01";
+    winpageChatLabel.textContent = "Чат с победителем";
+
     winpageWinnersMessagesPanel = document.createElement("div");
-    winpageWinnersMessagesPanel.className = "tryddd";
-    winpageWinnersMessagesPanel.textContent = "Еще раз";
+    winpageWinnersMessagesPanel.className = "winpage-winnerchat-panel";
 
     winpageRoot.appendChild(winpageHeader);
     winpageHeader.appendChild(winpageFormHeader);
@@ -159,6 +172,9 @@ function buildWinnwerpage()
     winpageRoot.appendChild(winpageButtonsPanel);
     winpageButtonsPanel.appendChild(winpageBackButton);
     winpageButtonsPanel.appendChild(winpageAgainButton);
+    winpageRoot.appendChild(winnerpageHr01);
+    winpageRoot.appendChild(winpageTimer);
+    winpageRoot.appendChild(winnerpageHr02);
     winpageRoot.appendChild(winpageWinnersMessagesPanel);
 }
 
@@ -215,8 +231,6 @@ function updateGamesPanel()
 }
 
 function removeAllChildNodes(parent) {
-    console.log('Двас');
-    console.log(parent.firstChild);
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }
@@ -286,23 +300,46 @@ function processGames(games)
 
 function updateWinnersMessages()
 {
-    console.log('Рас');
     removeAllChildNodes(winpageWinnersMessagesPanel);
-    console.log('Рас');
     for (let i = 0; i < winnersMessages.length; ++i)
     {
-        console.log('Рас');
         let winnersMessage = document.createElement("div");
-        console.log('Рас');
         winnersMessage.className = "mainpage-label";
-        console.log('Рас');
-        winnersMessage.textContent = winnersMessages[i];
-        console.log('Рас');
-        console.log(winnersMessages);
-        console.log('Рас');
+        winnersMessage.textContent = winner+": "+winnersMessages[i];
         winpageWinnersMessagesPanel.appendChild(winnersMessage);
     }
 }
+
+function resetTimer()
+{
+    countDownDate = new Date().getTime();
+}
+
+
+// Update the count down every 1 second
+async function timerTick() 
+{
+
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  // Time calculations for minutes and seconds
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  if (distance < 0) {
+    winpageTimer.textContent = "EXPIRED";
+  }
+  else
+  {
+    winpageTimer.textContent = minutes + ":" + seconds;
+  }
+
+  setTimeout ( () => {
+    timerTick() 
+  }, 1000)
+  
+};
 
 function quickSort(arr) {
     
