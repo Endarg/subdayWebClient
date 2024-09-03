@@ -4,6 +4,7 @@ const COLUMNS_COUNT = 7;
 
 let isOn = false;
 let channel = "honeymad";
+let winnersMessages = [];
 
 document.body.onload = init;
 
@@ -27,6 +28,7 @@ let winpageChattersAnouncement;
 let winpageChatters;
 let winpageBackButton;
 let winpageAgainButton;
+let winpageWinnersMessagesPanel;
 
 function init()
 {    
@@ -37,6 +39,7 @@ function init()
 
     getInit();
     getUpdate();
+    getWinnerMessages();
 }
 
 function buildMainpage()
@@ -71,6 +74,7 @@ function buildMainpage()
 
     mainpageGamesPanel = document.createElement("div");
     mainpageGamesPanel.className = "mainpage-games-panel";
+    
 
     for (let i = 0; i < COLUMNS_COUNT; ++i)
     {
@@ -142,6 +146,8 @@ function buildWinnwerpage()
     winpageAgainButton.textContent = "Еще раз";
     winpageAgainButton.onclick = winpageAgainButtonOnClick;
 
+    winpageWinnersMessagesPanel = document.createElement("div");
+
     winpageRoot.appendChild(winpageHeader);
     winpageHeader.appendChild(winpageFormHeader);
     winpageRoot.appendChild(winnerpageLabel01);
@@ -151,6 +157,7 @@ function buildWinnwerpage()
     winpageRoot.appendChild(winpageButtonsPanel);
     winpageButtonsPanel.appendChild(winpageBackButton);
     winpageButtonsPanel.appendChild(winpageAgainButton);
+    winpageRoot.appendChild(winpageWinnersMessagesPanel);
 }
 
 function mountWinnerpage()
@@ -268,6 +275,18 @@ function processGames(games)
     gamesProcessed = quickSort(gamesProcessed);
 }
 
+function updateWinnersMessages()
+{
+    winpageWinnersMessagesPanel.removeAllChildNodes();
+    for (let i = 0; i < winnersMessages.length; ++i)
+    {
+        let winnersMessage = document.createElement("div");
+        winnersMessage.className = "mainpage-label";
+        winnersMessage.textContent = winnersMessages[i];
+        winpageWinnersMessagesPanel.appendChild(winnersMessage);
+    }
+}
+
 function quickSort(arr) {
     
     if (arr.length < 2) return arr;
@@ -297,7 +316,7 @@ async function getInit()
         console.log('Status: '+isOn);
         updateStatus();
         if (res.status == 200)
-            console.log('Got itin config');
+            console.log('Got init config');
     });
     
 }
@@ -322,6 +341,26 @@ async function getUpdate()
     } catch (e) {
         setTimeout ( () => {
             console.log('Something went wrong, restarting update');
+            getUpdate()
+        }, 500)
+    }
+}
+
+async function getWinnerMessages()
+{
+    try {
+        console.log('Getting winners messages');
+        
+        await axios.get('https://subday.fun/get-winner-msg').then (res => {
+            console.log('Got winners messages');
+            winnersMessages = res.data.winnersMsgs;
+            updateWinnersMessages();
+        });
+        
+        await getUpdate()
+    } catch (e) {
+        setTimeout ( () => {
+            console.log('Something went wrong, restarting winners messages update');
             getUpdate()
         }, 500)
     }
