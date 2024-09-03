@@ -215,6 +215,7 @@ function updateGamesPanel()
 }
 
 function removeAllChildNodes(parent) {
+    console.log('Двас');
     console.log(parent.firstChild);
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
@@ -377,6 +378,7 @@ async function getWinnerMessages()
         await getUpdate()
     } catch (e) {
         setTimeout ( () => {
+            console.log(e);
             console.log('Something went wrong, restarting winners messages update');
             getUpdate()
         }, 500)
