@@ -375,12 +375,12 @@ async function getWinnerMessages()
             updateWinnersMessages();
         });
         
-        await getUpdate()
+        await getWinnerMessages()
     } catch (e) {
         setTimeout ( () => {
             console.log(e);
             console.log('Something went wrong, restarting winners messages update');
-            getUpdate()
+            getWinnerMessages()
         }, 500)
     }
 }
