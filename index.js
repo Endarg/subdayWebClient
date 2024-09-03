@@ -287,7 +287,7 @@ function processGames(games)
 function updateWinnersMessages()
 {
     console.log('Рас');
-    winpageWinnersMessagesPanel.removeAllChildNodes();
+    removeAllChildNodes(winpageWinnersMessagesPanel);
     console.log('Рас');
     for (let i = 0; i < winnersMessages.length; ++i)
     {
