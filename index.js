@@ -336,6 +336,7 @@ async function timerTick()
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   var secText = "";
+  console.log(seconds);
   if (seconds < 10)
   {
     secText = "0";
@@ -351,6 +352,7 @@ async function timerTick()
   if (distance < 0) {
     winpageTimer.textContent = "00:00";
   }
+
   else
   {
     winpageTimer.textContent = minText + minutes + ":" + secText + seconds;
