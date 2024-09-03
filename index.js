@@ -288,6 +288,7 @@ function updateWinnersMessages()
         let winnersMessage = document.createElement("div");
         winnersMessage.className = "mainpage-label";
         winnersMessage.textContent = winnersMessages[i];
+        console.log(winnersMessages[i]);
         winpageWinnersMessagesPanel.appendChild(winnersMessage);
     }
 }
