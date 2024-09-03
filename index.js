@@ -282,13 +282,20 @@ function processGames(games)
 
 function updateWinnersMessages()
 {
+    console.log('Рас');
     winpageWinnersMessagesPanel.removeAllChildNodes();
+    console.log('Рас');
     for (let i = 0; i < winnersMessages.length; ++i)
     {
+        console.log('Рас');
         let winnersMessage = document.createElement("div");
+        console.log('Рас');
         winnersMessage.className = "mainpage-label";
+        console.log('Рас');
         winnersMessage.textContent = winnersMessages[i];
-        console.log(winnersMessages[i]);
+        console.log('Рас');
+        console.log(winnersMessages);
+        console.log('Рас');
         winpageWinnersMessagesPanel.appendChild(winnersMessage);
     }
 }
