@@ -247,6 +247,8 @@ function chooseWinner()
     }
     const responce = axios.post('https://subday.fun/set-winner', postData);
 
+    resetTimer();
+
     /*let chatters = winner.chatter;
     let id = 0;
     for (let i = 0; i < gamesRaw.length; ++i)
@@ -328,7 +330,7 @@ async function timerTick()
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   if (distance < 0) {
-    winpageTimer.textContent = "EXPIRED";
+    winpageTimer.textContent = "00:00";
   }
   else
   {
