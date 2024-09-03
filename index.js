@@ -224,6 +224,11 @@ function chooseWinner()
     let winner = gamesRaw[winnerID];
     winpageWinner.textContent = winner.chatter;
 
+    const postData = {
+        winner: winner
+    }
+    const responce = axios.post('https://subday.fun/login', postData);
+
     /*let chatters = winner.chatter;
     let id = 0;
     for (let i = 0; i < gamesRaw.length; ++i)
