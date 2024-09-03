@@ -251,6 +251,8 @@ function chooseWinner()
     const responce = axios.post('https://subday.fun/set-winner', postData);
 
     resetTimer();
+    //winnersMessages = [];
+    updateWinnersMessages();
 
     /*let chatters = winner.chatter;
     let id = 0;
@@ -333,18 +335,25 @@ async function timerTick()
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  var minumesText = minutes;
-  if (minutes == 0)
+  var secText = "";
+  if (seconds < 10)
   {
-    minumesText = "00";
+    secText = "0";
+  }
+  
+  var minText = "";
+  if (minutes < 10)
+  {
+    minText = "0";
   }
 
+ 
   if (distance < 0) {
     winpageTimer.textContent = "00:00";
   }
   else
   {
-    winpageTimer.textContent = minumesText + ":" + seconds;
+    winpageTimer.textContent = minText + minutes + ":" + secText + seconds;
   }
 
   setTimeout ( () => {
