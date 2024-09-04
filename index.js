@@ -154,7 +154,7 @@ function buildWinnwerpage()
     const winnerpageHr01 = document.createElement("hr");
 
     winpageTimer = document.createElement("div");
-    winpageTimer.className = "winpage-winner";
+    winpageTimer.className = "winpage-timer";
 
     const winnerpageHr02 = document.createElement("hr");
 
