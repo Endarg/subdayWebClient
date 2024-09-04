@@ -195,6 +195,27 @@
     animation-iteration-count: 1;
 }
 
+.winpage-timer
+{
+    display: block;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 72px;
+
+    color: aliceblue;
+
+    animation: winpageWinnerOpacity 1s;
+    animation-iteration-count: 1;
+}
+
 @keyframes winpageWinnerOpacity {
     from {
         transform: scale(0);
