@@ -58,7 +58,7 @@ function buildMainpage()
 
     mainpageFormHeader = document.createElement("div");
     mainpageFormHeader.className = "mainpage-form-header";
-    mainpageFormHeader.textContent = "";
+    mainpageFormHeader.textContent = "!КОМП";
 
     mainpageUpperPanel = document.createElement("div");
     mainpageUpperPanel.className = "mainpage-upperpanel"
@@ -125,7 +125,7 @@ function buildWinnwerpage()
 
     winpageFormHeader = document.createElement("div");
     winpageFormHeader.className = "mainpage-form-header";
-    winpageFormHeader.textContent = "";
+    winpageFormHeader.textContent = "!КОМП";
 
     const winnerpageLabel01 = document.createElement("div");
     winnerpageLabel01.className = "winpage-label01";

@@ -44,6 +44,7 @@
 {
     display: inline-block;
     width: 1920px;
+    height: 110px;
     background-image: url(imgs/panel.png);
 }
 
