@@ -45,6 +45,8 @@
 .mainpage-upperpanel
 {
     display: inline-block;
+    max-width: 100%;
+    overflow-x: hidden;
     height: 110px;
     background-image: url(imgs/panel.png);
 }
