@@ -16,6 +16,7 @@ let chattersCount;
 
 let mainpageRoot;
 let mainpageFormHeader;
+let mainpageUpperPanel;
 let mainpageStatus;
 let mainpageChattersCountLabel;
 
@@ -57,7 +58,10 @@ function buildMainpage()
 
     mainpageFormHeader = document.createElement("div");
     mainpageFormHeader.className = "mainpage-form-header";
-    mainpageFormHeader.textContent = "!КОМП";
+    mainpageFormHeader.textContent = "";
+
+    mainpageUpperPanel = document.createElement("div");
+    mainpageUpperPanel.className = "mainpage-upperpanel"
 
     const mainpageStatusLabel = document.createElement("div");
     mainpageStatusLabel.className = "mainpage-label"
@@ -93,9 +97,10 @@ function buildMainpage()
     mainpageHeader.appendChild(mainpageFormHeader);
     //mainpageRoot.appendChild(mainpageStatusLabel);
     //mainpageRoot.appendChild(mainpageStatus);
-    mainpageRoot.appendChild(mainpageChattersCountLabel);
-    mainpageRoot.appendChild(mainpageButton);
-    mainpageRoot.appendChild(mainpageHr01);
+    mainpageRoot.appendChild(mainpageUpperPanel);
+    mainpageUpperPanel.appendChild(mainpageChattersCountLabel);
+    mainpageUpperPanel.appendChild(mainpageButton);
+    //mainpageRoot.appendChild(mainpageHr01);
     mainpageRoot.appendChild(mainpageGamesPanel);
 
 }
@@ -120,7 +125,7 @@ function buildWinnwerpage()
 
     winpageFormHeader = document.createElement("div");
     winpageFormHeader.className = "mainpage-form-header";
-    winpageFormHeader.textContent = "Subday";
+    winpageFormHeader.textContent = "";
 
     const winnerpageLabel01 = document.createElement("div");
     winnerpageLabel01.className = "winpage-label01";

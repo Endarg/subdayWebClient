@@ -27,12 +27,11 @@
     padding-top: 2px;
 
     text-align: center;
-    color: aliceblue;
-    font-size: 36px;
-    font-weight: bold;
+    color: black;
+    font-size: 24px;
     font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
-    background-image: url(imgs/header.png);
+    background-color: rgb(174,242,225);
 }
 
 .mainpage-form
@@ -41,6 +40,12 @@
     background-color: rgb(21,32,43);
 }
 
+.mainpage-upperpanel
+{
+    display: inline-block;
+    width: 1920px;
+    background-image: url(imgs/panel.png);
+}
 
 .mainpage-label
 {
