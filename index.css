@@ -228,12 +228,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
-    font-family: gilroy-regular, Helvetica, Arial, sans-serif;
+    font-family: gilroy-bold, Helvetica, Arial, sans-serif;
 
     text-transform: uppercase;
     text-align: center;
 
-    font-weight: bold;
     font-size: 48px;
 
     color: black;
@@ -247,15 +246,16 @@
     display: block;
     height: 108px;
 
-    font-family: gilroy-regular, Helvetica, Arial, sans-serif;
+    font-family: gilroy-bold, Helvetica, Arial, sans-serif;
 
     text-transform: uppercase;
     text-align: center;
 
-    /*font-weight: bold;*/
     font-size: 72px;
 
     color: black;
+
+    padding-top: 7px;
 
     animation: winpageWinnerOpacity 1s;
     animation-iteration-count: 1;
