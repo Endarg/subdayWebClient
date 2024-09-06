@@ -48,6 +48,8 @@
     display: grid;
     grid-auto-flow: row;
 
+    align-items: center;
+
     width: 1920px;
     height: 110px;
 
