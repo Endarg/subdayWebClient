@@ -198,6 +198,14 @@
     background-color: rgb(180,180,180);
 }
 
+.winpage-root
+{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(180, 180, 180);
+}
+
 .winpage-label01
 {
     display: block;
@@ -208,7 +216,9 @@
 
     text-align: center;
     font-size: 32px;
-    color: aliceblue;
+
+    color: black;
+    background-color: rgb(180,180,180);
 }
 
 .winpage-winner
@@ -226,7 +236,7 @@
     font-weight: bold;
     font-size: 48px;
 
-    color: aliceblue;
+    color: black;
 
     animation: winpageWinnerOpacity 1s;
     animation-iteration-count: 1;
@@ -247,10 +257,13 @@
     font-weight: bold;
     font-size: 72px;
 
-    color: aliceblue;
+    color: black;
 
     animation: winpageWinnerOpacity 1s;
     animation-iteration-count: 1;
+
+    background-image: url(imgs/panel_timer.png);
+    
 }
 
 @keyframes winpageWinnerOpacity {
@@ -272,12 +285,15 @@
 
     text-align: center;
     font-size: 16px;
-    color: aliceblue;
+
+    color: black;
+    background-color: rgb(180,180,180);
 }
 
 .wingape-buttons-panel
 {
     display: block;
+    background-color: rgb(180,180,180);
 }
 
 .winpage-button-left

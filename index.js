@@ -118,7 +118,7 @@ function dismountMainpage()
 function buildWinnwerpage()
 {
     winpageRoot = document.createElement("div");
-    winpageRoot.className = "mainpage-root";
+    winpageRoot.className = "winpage-root";
 
     const winpageHeader = document.createElement("div");
     winpageHeader.className = "mainpage-header";
@@ -179,9 +179,9 @@ function buildWinnwerpage()
     winpageRoot.appendChild(winpageButtonsPanel);
     winpageButtonsPanel.appendChild(winpageBackButton);
     winpageButtonsPanel.appendChild(winpageAgainButton);
-    winpageRoot.appendChild(winnerpageHr01);
+    //winpageRoot.appendChild(winnerpageHr01);
     winpageRoot.appendChild(winpageTimer);
-    winpageRoot.appendChild(winnerpageHr02);
+    //winpageRoot.appendChild(winnerpageHr02);
     winpageRoot.appendChild(winpageChatLabel);
     winpageRoot.appendChild(winpageWinnersMessagesPanel);
 }
