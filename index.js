@@ -223,7 +223,7 @@ function updateGamesPanel()
     {
         let game = document.createElement("div");
         let gameName = document.createElement("div");
-        gameName.className = "mainpage-label";
+        gameName.className = "mainpage-label-player";
         gameName.textContent = gamesProcessed[i].chatter;
         game.appendChild(gameName);
         mainpageGamesPanelColumns[currentColumn].appendChild(game);
