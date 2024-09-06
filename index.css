@@ -45,7 +45,6 @@
 .mainpage-upperpanel
 {
     display: inline-block;
-    width: auto;
     height: 110px;
     background-image: url(imgs/panel.png);
 }
@@ -172,6 +171,7 @@
     border-left-color: rgb(60,60,60);
     border-top-color: rgb(60,60,60);
     background-color: rgb(120, 120, 120);
+    color: rgb(20,20,20);
 }
 
 .mainpage-button:disabled
