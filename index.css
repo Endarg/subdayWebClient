@@ -3,6 +3,7 @@
 {
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .mainpage-root
@@ -46,7 +47,6 @@
 {
     display: inline-block;
     width: 1920px;
-    overflow-x: hidden;
     height: 110px;
     background-image: url(imgs/panel.png);
 }
