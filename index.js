@@ -57,7 +57,7 @@ function buildMainpage()
 
     mainpageFormHeader = document.createElement("div");
     mainpageFormHeader.className = "mainpage-form-header";
-    mainpageFormHeader.textContent = "Subday";
+    mainpageFormHeader.textContent = "!КОМП";
 
     const mainpageStatusLabel = document.createElement("div");
     mainpageStatusLabel.className = "mainpage-label"

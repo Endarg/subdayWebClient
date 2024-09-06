@@ -30,9 +30,9 @@
     color: aliceblue;
     font-size: 36px;
     font-weight: bold;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
-    background-color: rgb(211,124,0);
+    background-image: url(imgs/header.png);
 }
 
 .mainpage-form
@@ -167,7 +167,7 @@
 
     margin-top: 5px;
 
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
     text-align: center;
     font-size: 32px;
@@ -181,7 +181,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
     text-transform: uppercase;
     text-align: center;
@@ -202,7 +202,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
     text-transform: uppercase;
     text-align: center;
@@ -337,4 +337,11 @@
 
     text-align: left;
     color: aliceblue;
+}
+
+@font-face {
+    font-family: gilroy-regular;
+    src: url(fonts/GILROY-REGULAR.OTF);
+    font-style: normal;
+    font-weight: 100;
 }
