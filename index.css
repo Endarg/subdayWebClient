@@ -15,22 +15,21 @@
 
 .mainpage-header
 {
-    background-color: rgb(211,124,0);
     height: 50px;
     width: 100%;
     display: grid;
     align-items: center; 
+
+    background-color: rgb(174,242,225);
 }
 
 .mainpage-form-header
 {
-    
-
     padding-top: 0px;
     padding-bottom: 0px;
 
-    text-align: center;
     color: black;
+    text-align: center;
     font-size: 28px;
     font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
