@@ -76,7 +76,7 @@ function buildMainpage()
 
     mainpageButton = document.createElement("button");
     mainpageButton.className = "mainpage-button";
-    mainpageButton.textContent = "Выбрать победителя";
+    mainpageButton.textContent = "ВЫБРАТЬ ПОБЕДИТЕЛЯ";
     mainpageButton.onclick = mainpageButtonOnClick;
 
     const mainpageHr01 = document.createElement("hr");
