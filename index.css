@@ -45,7 +45,7 @@
 .mainpage-upperpanel
 {
     display: inline-block;
-    width: 1920px;
+    width: auto;
     height: 110px;
     background-image: url(imgs/panel.png);
 }
@@ -162,18 +162,22 @@
 
 .mainpage-button:hover
 {
-    background-color: rgb(230, 139, 13);
+    background-color: rgb(200,200,200);
 }
 
 .mainpage-button:active
 {
-    background-color: rgb(202, 123, 13);
+    border-bottom-color: rgb(232,232,232);
+    border-right-color: rgb(232,232,232);
+    border-left-color: rgb(60,60,60);
+    border-top-color: rgb(60,60,60);
+    background-color: rgb(120, 120, 120);
 }
 
 .mainpage-button:disabled
 {
-    background-color: rgb(63,76,89);
-    color: rgb(153, 158, 161);
+    background-color: rgb(50,50,50);
+    color: rgb(180,180,180);
 }
 
 .mainpage-games-panel
