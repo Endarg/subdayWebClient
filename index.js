@@ -148,12 +148,12 @@ function buildWinnwerpage()
 
     winpageBackButton = document.createElement("button");
     winpageBackButton.className = "winpage-button-left";
-    winpageBackButton.textContent = "Назад";
+    winpageBackButton.textContent = "НАЗАД";
     winpageBackButton.onclick = wingapeBackButtonOnClick;
 
     winpageAgainButton = document.createElement("button");
     winpageAgainButton.className = "winpage-button-right";
-    winpageAgainButton.textContent = "Еще раз";
+    winpageAgainButton.textContent = "ЕЩЕ РАЗ";
     winpageAgainButton.onclick = winpageAgainButtonOnClick;
 
     const winnerpageHr01 = document.createElement("hr");
