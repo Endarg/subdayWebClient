@@ -252,7 +252,7 @@
     text-transform: uppercase;
     text-align: center;
 
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 72px;
 
     color: black;
