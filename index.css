@@ -45,9 +45,12 @@
 
 .mainpage-upperpanel
 {
-    display: inline-block;
+    display: grid;
+    grid-auto-flow: row;
+
     width: 1920px;
     height: 110px;
+    
     background-image: url(imgs/panel.png);
 }
 
