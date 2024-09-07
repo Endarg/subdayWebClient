@@ -241,10 +241,16 @@
     animation-iteration-count: 1;
 }
 
+.winpage-timer-panel
+{
+    height: 108px;
+    padding-top: 7px;
+
+}
+
 .winpage-timer
 {
     display: block;
-    height: 108px;
 
     font-family: gilroy-bold, Helvetica, Arial, sans-serif;
 
@@ -255,8 +261,7 @@
 
     color: black;
 
-    padding-top: 7px;
-
+    
     animation: winpageWinnerOpacity 1s;
     animation-iteration-count: 1;
 

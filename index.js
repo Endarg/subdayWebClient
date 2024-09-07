@@ -158,6 +158,9 @@ function buildWinnwerpage()
 
     const winnerpageHr01 = document.createElement("hr");
 
+    const winnerpageTimerPanel = document.createElement("div");
+    winnerpageTimerPanel.className = "winpage-timer-panel";
+
     winpageTimer = document.createElement("div");
     winpageTimer.className = "winpage-timer";
 
@@ -180,7 +183,8 @@ function buildWinnwerpage()
     winpageButtonsPanel.appendChild(winpageBackButton);
     winpageButtonsPanel.appendChild(winpageAgainButton);
     //winpageRoot.appendChild(winnerpageHr01);
-    winpageRoot.appendChild(winpageTimer);
+    winpageRoot.appendChild(winnerpageTimerPanel);
+    winnerpageTimerPanel.appendChild(winpageTimer);
     //winpageRoot.appendChild(winnerpageHr02);
     winpageRoot.appendChild(winpageChatLabel);
     winpageRoot.appendChild(winpageWinnersMessagesPanel);
