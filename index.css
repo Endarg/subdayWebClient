@@ -272,6 +272,26 @@
     animation-iteration-count: 1;
 }
 
+.winpage-timer-windows
+{
+    display: block;
+
+    font-family: gilroy-bold, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    
+    font-size: 72px;
+    color: black;
+
+    height: 90px;
+
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    animation: winpageWinnerOpacity 1s;
+    animation-iteration-count: 1;
+}
+
 @keyframes winpageWinnerOpacity {
     from {
         transform: scale(0);
