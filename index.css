@@ -254,11 +254,12 @@
 
 .winpage-timer
 {
-    display: block;
+    display: inline;
 
     font-family: gilroy-bold, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
+    vertical-align: bottom;
     font-size: 72px;
     color: black;
 
