@@ -229,7 +229,7 @@ function updateGamesPanel()
         let gameName = document.createElement("div");
         gameName.className = "mainpage-label-player";
         //gameName.textContent = gamesProcessed[i].chatter.toUpperCase();
-        gameName.textContent = "lol";
+        gameName.textContent = "lol".toUpperCase();
         game.appendChild(gameName);
         mainpageGamesPanelColumns[currentColumn].appendChild(game);
         
