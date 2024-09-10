@@ -262,8 +262,8 @@
     font-size: 72px;
     color: black;
 
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 7px;
+    padding-bottom: 7px;
 
     animation: winpageWinnerOpacity 1s;
     animation-iteration-count: 1;
