@@ -259,7 +259,7 @@
     font-family: gilroy-bold, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: 90px;
+    font-size: 72px;
     color: black;
 
     height: 90px;
@@ -426,13 +426,9 @@
 @font-face {
     font-family: gilroy-regular;
     src: url(fonts/GILROY-REGULAR.OTF);
-    font-style: normal;
-    font-weight: 10;
 }
 
 @font-face {
     font-family: gilroy-bold;
     src: url(fonts/GILROY-BOLD.OTF);
-    font-style: normal;
-    font-weight: 100;
 }
