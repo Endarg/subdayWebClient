@@ -74,6 +74,8 @@
     display: inline-block;
     width: 160px;
 
+    font-family: gilroy-regular, Helvetica, Arial, sans-serif;
+
     margin-left: 5px;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -86,6 +88,8 @@
 {
     display: inline-block;
     width: 1000px;
+
+    font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
     margin-left: 5px;
     margin-bottom: 10px;
@@ -404,6 +408,8 @@
 {
     display: inline-block;
     width: 1920px;
+
+    font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
     margin-left: 5px;
     margin-bottom: 10px;
