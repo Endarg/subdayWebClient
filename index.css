@@ -254,19 +254,19 @@
 
 .winpage-timer
 {
-    display: inline;
+    display: block;
 
     font-family: gilroy-bold, Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
-    vertical-align: bottom;
+    
     font-size: 72px;
     color: black;
 
     height: 90px;
 
-    padding-top: 5px;
-    padding-bottom: 13px;
+    padding-top: 13px;
+    padding-bottom: 5px;
 
     animation: winpageWinnerOpacity 1s;
     animation-iteration-count: 1;
