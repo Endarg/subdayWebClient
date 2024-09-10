@@ -264,8 +264,8 @@
 
     height: 90px;
 
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 5px;
+    padding-bottom: 13px;
 
     animation: winpageWinnerOpacity 1s;
     animation-iteration-count: 1;
