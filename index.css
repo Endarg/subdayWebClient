@@ -252,6 +252,7 @@
     text-align: center;
     height: 108px;
     background-image: url(imgs/panel_timer.png);
+    background-position: center;
 }
 
 .winpage-timer
