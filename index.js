@@ -21,6 +21,7 @@ let mainpageFormHeader;
 let mainpageUpperPanel;
 let mainpageStatus;
 let mainpageChattersCountLabel;
+let mainpageChattersCountLabelNumbers;
 
 let mainpageButton;
 let mainpageGamesPanel;
@@ -73,13 +74,16 @@ function buildMainpage()
     const mainpageUpperPanelContainer03 = document.createElement("div");
     mainpageUpperPanelContainer03.className = "mainpage-upperpanel-container"
 
-    const mainpageStatusLabel = document.createElement("div");
-    mainpageStatusLabel.className = "mainpage-label"
-    mainpageStatusLabel.textContent = "Статус приема заявок:";
+    const mainpageChattersCountLabelContainer = document.createElement("div");
+    mainpageChattersCountLabelContainer.className = "mainpage-label-chatterscount-container"
+   
 
     mainpageChattersCountLabel = document.createElement("div");
     mainpageChattersCountLabel.className = "mainpage-label-chatterscount"
     mainpageChattersCountLabel.textContent = "Количество участников: ";
+
+    mainpageChattersCountLabelNumbers = document.createElement("div");
+    mainpageChattersCountLabelNumbers.className = "mainpage-label-chatterscount-number"
     
     mainpageStatus = document.createElement("div");
     updateStatus();
@@ -109,7 +113,9 @@ function buildMainpage()
     mainpageUpperPanel.appendChild(mainpageUpperPanelContainer01);
     mainpageUpperPanel.appendChild(mainpageUpperPanelContainer02);
     mainpageUpperPanel.appendChild(mainpageUpperPanelContainer03);
-    mainpageUpperPanelContainer01.appendChild(mainpageChattersCountLabel);
+    mainpageUpperPanelContainer01.appendChild(mainpageChattersCountLabelContainer);
+    mainpageChattersCountLabelContainer.appendChild(mainpageChattersCountLabel);
+    mainpageChattersCountLabelContainer.appendChild(mainpageChattersCountLabelNumbers);
     mainpageUpperPanelContainer02.appendChild(mainpageButton);
     mainpageRoot.appendChild(mainpageGamesPanel);
 
@@ -229,7 +235,7 @@ function updateStatus()
 
 function updateGamesPanel()
 {
-    mainpageChattersCountLabel.textContent = "Количество участников: "+ gamesProcessed.length;
+    mainpageChattersCountLabelNumbers.textContent = gamesProcessed.length;
 
     for (let i = 0; i < COLUMNS_COUNT; ++i)
     {
