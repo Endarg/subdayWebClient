@@ -45,7 +45,8 @@
 
 .mainpage-upperpanel
 {
-    display: inline;
+    display: grid;
+    grid-auto-flow: column;
     width: 100%;
     height: 110px;
 
