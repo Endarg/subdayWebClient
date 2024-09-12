@@ -140,6 +140,8 @@
 
     text-align: center;
     color: white;
+    
+    border: solid 3px;
 
     border-top-color: rgb(0,60,198);
     border-left-color: rgb(0,60,198);
