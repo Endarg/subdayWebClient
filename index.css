@@ -45,15 +45,22 @@
 
 .mainpage-upperpanel
 {
+    display: block;
+    width: 100%;
+    height: 110px;
+
+    background-image: url(imgs/panel.png);
+}
+
+.mainpage-upperpanel-containter
+{
     display: grid;
     grid-auto-flow: row;
 
     align-content: center;
 
-    width: 100%;
+    width: 30%;
     height: 110px;
-
-    background-image: url(imgs/panel.png);
 }
 
 .mainpage-label

@@ -66,6 +66,13 @@ function buildMainpage()
     mainpageUpperPanel = document.createElement("div");
     mainpageUpperPanel.className = "mainpage-upperpanel"
 
+    const mainpageUpperPanelContainer01 = document.createElement("div");
+    mainpageUpperPanelContainer01.className = "mainpage-upperpanel-container"
+    const mainpageUpperPanelContainer02 = document.createElement("div");
+    mainpageUpperPanelContainer02.className = "mainpage-upperpanel-container"
+    const mainpageUpperPanelContainer03 = document.createElement("div");
+    mainpageUpperPanelContainer03.className = "mainpage-upperpanel-container"
+
     const mainpageStatusLabel = document.createElement("div");
     mainpageStatusLabel.className = "mainpage-label"
     mainpageStatusLabel.textContent = "Статус приема заявок:";
@@ -98,12 +105,12 @@ function buildMainpage()
 
     mainpageRoot.appendChild(mainpageHeader);
     mainpageHeader.appendChild(mainpageFormHeader);
-    //mainpageRoot.appendChild(mainpageStatusLabel);
-    //mainpageRoot.appendChild(mainpageStatus);
     mainpageRoot.appendChild(mainpageUpperPanel);
-    mainpageUpperPanel.appendChild(mainpageChattersCountLabel);
-    mainpageUpperPanel.appendChild(mainpageButton);
-    //mainpageRoot.appendChild(mainpageHr01);
+    mainpageUpperPanel.appendChild(mainpageUpperPanelContainer01);
+    mainpageUpperPanel.appendChild(mainpageUpperPanelContainer02);
+    mainpageUpperPanel.appendChild(mainpageUpperPanelContainer03);
+    mainpageUpperPanelContainer01.appendChild(mainpageChattersCountLabel);
+    mainpageUpperPanelContainer02.appendChild(mainpageButton);
     mainpageRoot.appendChild(mainpageGamesPanel);
 
 }
