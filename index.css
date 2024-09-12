@@ -108,8 +108,8 @@
 
     margin-left: 5px;
 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     text-align: left;
     color: black;
@@ -135,12 +135,12 @@
 
     margin-left: 15px;
 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     text-align: center;
     color: white;
-    
+
     border: solid 3px;
 
     border-top-color: rgb(0,60,198);
