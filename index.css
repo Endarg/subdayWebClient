@@ -53,7 +53,7 @@
     background-image: url(imgs/panel.png);
 }
 
-.mainpage-upperpanel-containter
+.mainpage-upperpanel-container
 {
     display: grid;
     grid-auto-flow: row;
