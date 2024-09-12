@@ -155,10 +155,6 @@ function buildWinnwerpage()
     winpageChattersAnouncement.className = "winpage-label01";
     winpageChattersAnouncement.textContent = "варик предложили";
 
-    /*winpageChatters = document.createElement("div");
-    winpageChatters.className = "winpage-label02";
-    winpageChatters.textContent = "honeymad, endargemp, zhmil";*/
-
     const winpageButtonsPanel = document.createElement("div");
     winpageButtonsPanel.className = "wingape-buttons-panel";
 
