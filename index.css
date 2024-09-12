@@ -101,7 +101,9 @@
 {
     display: inline-block;
     width: auto;
-
+    height: 50px;
+    
+    font-size: 1.5vmax;
     font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
     margin-left: 5px;
@@ -123,10 +125,12 @@
 {
     display: inline-block;
     width: auto;
-
+    height: 50px;
+    
+    font-size: 1.5vmax;
     font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
-    margin-left: 5px;
+    margin-left: 15px;
 
     text-align: center;
     color: white;
