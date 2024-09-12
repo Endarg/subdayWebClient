@@ -88,14 +88,14 @@
 .mainpage-label-chatterscount
 {
     width: auto;
-    height: 37px;
+    height: 40px;
     
     font-size: 28.8px;
     font-family: gilroy-bold, Helvetica, Arial, sans-serif;
 
     margin-left: 15px;
 
-    padding-top: 7px;
+    padding-top: 4px;
 
     text-align: center;
     color: black;
@@ -113,14 +113,14 @@
 .mainpage-label-chatterscount-number
 {
     width: auto;
-    height: 37px;
+    height: 40px;
     
     font-size: 28.8px;
     font-family: gilroy-bold, Helvetica, Arial, sans-serif;
 
     margin-left: 15px;
 
-    padding-top: 7px;
+    padding-top: 4px;
 
     text-align: center;
     color: white;
