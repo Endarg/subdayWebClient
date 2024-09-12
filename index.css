@@ -45,8 +45,7 @@
 
 .mainpage-upperpanel
 {
-    display: grid;
-    grid-template-columns: 640px 640px 640px;
+    display: block;
     width: 100%;
     height: 110px;
 
