@@ -80,7 +80,7 @@ function buildMainpage()
 
     mainpageChattersCountLabel = document.createElement("div");
     mainpageChattersCountLabel.className = "mainpage-label-chatterscount"
-    mainpageChattersCountLabel.textContent = "Количество участников: ";
+    mainpageChattersCountLabel.textContent = "КОЛИЧЕСТВО УЧАСТНИКОВ";
 
     mainpageChattersCountLabelNumbers = document.createElement("div");
     mainpageChattersCountLabelNumbers.className = "mainpage-label-chatterscount-number"
