@@ -94,7 +94,8 @@
 
 .mainpage-label-chatterscount-container
 {
-    display: block;
+    display: grid;
+    grid-auto-flow: column;
 }
 
 .mainpage-label-chatterscount
