@@ -101,15 +101,12 @@
 {
     display: inline-block;
     width: auto;
-    height: 27px;
+    height: 47px;
     
     font-size: 1.5vmax;
     font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
     margin-left: 5px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
 
     text-align: center;
     color: black;
@@ -128,15 +125,12 @@
 {
     display: inline-block;
     width: auto;
-    height: 27px;
+    height: 47px;
     
     font-size: 30px;
     font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
     margin-left: 15px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
 
     text-align: center;
     color: white;
