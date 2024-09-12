@@ -58,6 +58,7 @@
     grid-auto-flow: row;
 
     height: 110px;
+    width: 30%;
 
     align-content: center;
 }
