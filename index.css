@@ -64,19 +64,6 @@
     height: 110px;
 }
 
-.mainpage-label
-{
-    display: inline-block;
-    width: 160px;
-
-    margin-left: 5px;
-    margin-bottom: 10px;
-    margin-top: 5px;
-
-    text-align: left;
-    color: aliceblue;
-}
-
 .mainpage-label-player
 {
     display: inline-block;
@@ -101,14 +88,13 @@
 .mainpage-label-chatterscount
 {
     width: auto;
-    height: 40px;
+    height: 47px;
     
-    font-size: 30px;
+    font-size: large;
     font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
     margin-left: 15px;
 
-    padding-top: 7px;
 
     text-align: center;
     color: black;
@@ -126,14 +112,14 @@
 .mainpage-label-chatterscount-number
 {
     width: auto;
-    height: 40px;
+    height: 47px;
     
-    font-size: 30px;
+    font-size: large;
     font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
     margin-left: 15px;
 
-    padding-top: 7px;
+
 
     text-align: center;
     color: white;
@@ -146,50 +132,6 @@
     border-bottom-color: rgb(0,5,17);
 
     background-color: rgb(0,47,154);
-}
-
-.mainpage-label-right
-{
-    display: inline-block;
-    width: 160px;
-
-    margin-left: 5px;
-    margin-bottom: 10px;
-    margin-top: 5px;
-
-    text-align: right;
-    color: aliceblue;
-}
-
-.mainpage-label-block
-{
-    display: block;
-
-    margin-left: 5px;
-
-    text-align: left;
-    color: aliceblue;
-}
-
-
-.mainpage-status-on
-{
-    display: inline-block;
-    width: 50%;
-
-    font-weight: bold;
-    text-align: left;
-    color: rgb(82, 212, 82);
-}
-
-.mainpage-status-off
-{
-    display: inline-block;
-    width: 50%;
-
-    font-weight: bold;
-    text-align: left;
-    color: rgb(247, 36, 36);
 }
 
 .mainpage-button
@@ -348,21 +290,6 @@
     to {
         transform: scale(1);
     }
-}
-
-.winpage-label02
-{
-    display: block;
-
-    margin-top: 5px;
-
-    font-family: Helvetica, Arial, sans-serif;
-
-    text-align: center;
-    font-size: 16px;
-
-    color: black;
-    background-color: rgb(180,180,180);
 }
 
 .wingape-buttons-panel
