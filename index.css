@@ -99,14 +99,13 @@
 
 .mainpage-label-chatterscount
 {
-    display: inline-block;
     width: auto;
     height: 47px;
     
-    font-size: 1.5vmax;
+    font-size: 30px;
     font-family: gilroy-regular, Helvetica, Arial, sans-serif;
 
-    margin-left: 5px;
+    margin-left: 15px;
 
     text-align: center;
     color: black;
@@ -123,7 +122,6 @@
 
 .mainpage-label-chatterscount-number
 {
-    display: inline-block;
     width: auto;
     height: 47px;
     
